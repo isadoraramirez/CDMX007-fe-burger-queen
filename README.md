@@ -7,9 +7,11 @@
 # Prototipo alta fidelidad
 ![screen](./src/img/Cambios.PNG)
 
-liga en figma:
+liga en marvel:
 
 https://marvelapp.com/8d9d01i/screen/55750923
+
+
 
 ## Preámbulo
 

@@ -14,6 +14,8 @@ class Square extends React.Component {
     }
   }
   
+  //contructor en el board establece su estado inicial 
+  //para contener un arreglo con  valores null (los cuadrados)
   class Board extends React.Component {
     constructor(props) {
       super(props);
@@ -38,7 +40,7 @@ class Square extends React.Component {
     }
   
     render() {
-      const status = 'Elige una opción';
+      const status = 'ABRIR MESA';
   
       return (
         <div>
