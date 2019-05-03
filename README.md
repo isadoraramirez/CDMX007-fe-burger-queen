@@ -7,6 +7,10 @@
 # Prototipo alta fidelidad
 ![screen](./src/img/Cambios.PNG)
 
+liga en figma:
+
+https://marvelapp.com/8d9d01i/screen/55750923
+
 ## Preámbulo
 
 [React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
