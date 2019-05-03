@@ -2,6 +2,10 @@
 
 # Diagrama de Flujo 
 ![screen](./src/img/FLUJO.jpg)
+# Historia de usauario
+![screen](./src/img/historias.jpg)
+# Prototipo alta fidelidad
+![screen](./src/img/Cambios.PNG)
 
 ## Preámbulo
 
