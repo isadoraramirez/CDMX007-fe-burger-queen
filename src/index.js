@@ -1,6 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './App.css';
+import { menu } from './datamenu.json';
+console.log (menu)
+
+// class App extends Component {
+//   constructor(){
+//     super();
+//     this.state ={
+//       menu
+//     }
+//   }
+// }
+// return Component
+// export default App;
 //import '../App'
 
 // import firebase from 'firebase';
@@ -19,6 +32,7 @@ function Square(props) {
     <button className="square" onClick={props.onClick}>
       {props.value}
     </button>
+    
   );
 }
 
