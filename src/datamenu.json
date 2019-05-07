@@ -1,0 +1,106 @@
+{
+  "menu": [{
+    "id": 1,
+    "num": "001",
+    "name": "desayuno",
+    "img": "http://www.png",
+    "type": [{
+      "platillos": [{
+        "id": 11,
+        "num": "011",
+        "name": "sanwich_de_jamon_queso",
+        "precio": "5.00"
+      }],
+      "bebidas": [{
+        "id": 13,
+        "num": "013",
+        "name": "cafe_americano",
+        "precio": "5.00" 
+
+        },{
+          "id": 12,
+          "num": "012",
+          "name": "jugo_de_frutas",
+          "precio": "7.00" 
+        },{
+          "id": 14,
+          "num": "014",
+          "name": "cafe_con_leche",
+          "precio": "7.00" 
+  
+        }]
+
+    }]
+    
+  }, {
+    "id": 2,
+    "num": "002",
+    "name": "comida",
+    "img": "http://www.png",
+    "type": [{
+      "platillos": [{
+        "id": 15,
+        "num": "015",
+        "name": "hamburguesa_simple",
+        "precio": "10.00" 
+
+      },{
+        "id": 16,
+        "num": "016",
+        "name": "hamburguesa_doble",
+        "precio": "15.00" 
+
+      },{
+        "id": 17,
+        "num": "017",
+        "name": "papas_fritas",
+        "precio": "5.00" 
+
+      },{
+        "id": 18,
+        "num": "018",
+        "name": "aros_de_cebolla",
+        "precio": ".00" 
+
+      }],
+      "bebidas": [{
+        "id": 19,
+        "num": "019",
+        "name": "agua_500ml",
+        "precio": "5.00" 
+
+        },{
+          "id": 20,
+          "num": "020",
+          "name": "agua_750ml",
+          "precio": "7.00" 
+  
+          },{
+            "id": 21,
+            "num": "021",
+            "name": "bebida_o_gaseosa500ml",
+            "precio": "7.00" 
+    
+            },{
+              "id": 22,
+              "num": "22",
+              "name": "bebida_o_gaseosa750ml",
+              "precio": "7.00" 
+      
+              },{
+                "id": 22,
+                "num": "22",
+                "name": "bebida_o_gaseosa750ml",
+                "precio": "7.00" 
+        
+                }]
+
+    }]
+    }
+]
+}
+
+
+
+
+

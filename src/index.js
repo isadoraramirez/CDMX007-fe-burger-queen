@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import firebase from 'firebase';
-import './index.css';
 
+//import '../App'
+import './index.css';
+// import firebase from 'firebase';
 // firebase.initializeApp({
 //   apiKey: "AIzaSyA6EX_Y2l7MxOaJmAfPx5HUAYUIpX6WtpE",
 //     authDomain: "ely-burguer-queen.firebaseapp.com",
