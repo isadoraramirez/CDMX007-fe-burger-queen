@@ -1,40 +1,80 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+ //import firebase from 'firebase'
+//---------------
+const firebase = require('firebase/app');
+require('firebase/database');
 
-import { menu } from './datamenu.json';
-console.log (menu)
+
+//------------
 
 
-class Hello extends React.Component {
 
-  constructor(){
+ const firebaseConfig = {
+  apiKey: "AIzaSyA6EX_Y2l7MxOaJmAfPx5HUAYUIpX6WtpE",
+  authDomain: "ely-burguer-queen.firebaseapp.com",
+  databaseURL: "https://ely-burguer-queen.firebaseio.com",
+  projectId: "ely-burguer-queen",
+  storageBucket: "ely-burguer-queen.appspot.com",
+  messagingSenderId: "324480551011",
+  appId: "1:324480551011:web:4aebb526702756f0"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+class App extends React.Component {
+   constructor(){
     super();
     this.state = {
-      message: " Bienvenido (from state)!"
-    };
-    //llamamos a this.setState
-    this.updateMessage = this.updateMessage.bind(this);
+      name: ''
+    }
   }
-  updateMessage(){
-    this.setState({
-      message: "Bienvenido (from changed state)!"
+  componentWillMount (){
+    const nameRef = firebase.database().ref().child('object').child('name')
+    nameRef.on('value',(snapshot)=>{
+      this.setState({
+        name: snapshot.val()
+      })
     })
   }
-  render() {
-    return (
-    <div>
-      <h2>BURGER QUEEN{this.state.message}!</h2>
-      <button onClick={this.updateMessage}>Click me!</button>
-    </div>
-  )
-}
+  render (){
+    return <h1>hola {this.state.name}</h1>
+  }
 }
 
+
+
+
+// class Hello extends React.Component {
+
+//   constructor(){
+//     super();
+//     this.state = {
+//       message: " Bienvenido (Desayuno)!"
+//     };
+//     //llamamos a this.setState
+//     this.updateMessage = this.updateMessage.bind(this);
+//   }
+//   updateMessage(){
+//     this.setState({
+//       message: " Bienvenido (Comida)!"
+//     })
+//   }
+//   render() {
+//     return (
+//     <div>
+//       <h2>BURGER QUEEN{this.state.message}!</h2>
+//       <button onClick={this.updateMessage}>Cambio de <menu></menu></button>
+//     </div>
+//   )
+// }
+// }
+
 ReactDOM.render(
-  <Hello 
+  <App 
   //proop = message se accede con this.prop.message
-  message=" Bienvenido"/>, 
+  />, 
   document.getElementById("root")
 );
 
@@ -51,16 +91,6 @@ ReactDOM.render(
 // export default App;
 //import '../App'
 
-// import firebase from 'firebase';
-// firebase.initializeApp({
-//   apiKey: "AIzaSyA6EX_Y2l7MxOaJmAfPx5HUAYUIpX6WtpE",
-//     authDomain: "ely-burguer-queen.firebaseapp.com",
-//     databaseURL: "https://ely-burguer-queen.firebaseio.com",
-//     projectId: "ely-burguer-queen",
-//     storageBucket: "ely-burguer-queen.appspot.com",
-//     messagingSenderId: "324480551011",
-//     appId: "1:324480551011:web:4aebb526702756f0"
-// })
 
 
 //-------------------------------------------------
@@ -209,6 +239,4 @@ ReactDOM.render(
 //       return squares[a];
 //     }
 //   }
-//   return null;
-// }
-
+//   return null;}
