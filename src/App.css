@@ -1,4 +1,32 @@
-body {
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+}
+
+code{
+  font-family: source-code-pro,Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+.App{
+  background-color: rgb(226, 196, 62);
+  max-width: 992px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  background-color: orange;
+
+}
+.nav-menu li{
+  display: inline-block
+}
+
+
+
+/* body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
   }
@@ -48,4 +76,4 @@ body {
   .game-info {
     margin-left: 20px;
   }
-  
+   */
