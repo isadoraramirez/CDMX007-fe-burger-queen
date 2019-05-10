@@ -27,11 +27,6 @@ class App extends Component {
 export default App;
 
 
-
-
-//import React from 'react';
-
-
 ReactDOM.render(
   <App 
   //proop = message se accede con this.prop.message
