@@ -4,25 +4,138 @@
   box-sizing: border-box;
 }
 
-code{
-  font-family: source-code-pro,Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+body {
+  background-color: rgb(252, 201, 126);
 }
-.App{
-  background-color: rgb(226, 196, 62);
+
+.App {
   max-width: 992px;
+  background-color: #fff;
   margin: auto;
 }
-nav {
+.home-image {
+  width: 100%;
+  height: 500px;
+  background-image: url();
+  background-size: cover;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-image:hover {
+  background-image: url();
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-thumbnail-1,
+.home-thumbnail-2,
+.home-thumbnail-3{
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+.home-thumbnail-1:hover,
+.home-thumbnail-2:hover,
+.home-thumbnail-3:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+.home-thumbnail-1 {
+  background-image: url();
+}
+
+.home-thumbnail-2 {
+  background-image: url("img/hambur.jpeg");
+}
+
+.home-thumbnail-3 {
+  background-image: url();
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: rgb(83, 5, 5);
+}
+
+.nav {
+  border-bottom: 1px solid grey;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
-  background-color: orange;
+  background-image:url("img/fondo.PNG");
+}
 
+.nav-menu {
+  list-style: none;
 }
-.nav-menu li{
-  display: inline-block
+
+.nav-menu li {
+  display: inline-block;
 }
+
+.nav-menu__link {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid lightgray;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-menu__link:hover {
+  border: 1px solid black;
+  background-color: rgb(228, 228, 228);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-menu__link.active {
+  background-color: rgb(173, 114, 37);
+  color: #fff;
+}
+
+.back {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid lightgray;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: rgb(149, 216, 238);
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.main-content h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
 
 
 
