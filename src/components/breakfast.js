@@ -8,7 +8,7 @@ const Breakfast = (props) => {
     let menu = Datamenu.map((dish)=>{
         return (
             <div className="menu-Container">
-                <button>{dish.name} $ 
+                <button>{dish.name} <br></br> $ 
                 {dish.price}</button>
             </div>
         );
