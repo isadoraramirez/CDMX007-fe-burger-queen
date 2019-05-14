@@ -1,22 +1,25 @@
 import React from 'react';
+import{Datamenu} from "../data/datamenu"
 //import { Link } from 'react-router-dom';
 // import breakfast from './breakfast';
 // import { Route} from 'react-router-dom';
 
 const Breakfast = (props) => {
-  return (
-    <div className="main-content">
-        <div className="container">
-            <h2>{props.title}</h2>
-            <div className="home-image"></div>
-            <div className="thumbnail-container">
-                <div className="home-thumbnail-1"></div>
-                <div className="home-thumbnail-2"></div>
-              
+    let menu = Datamenu.map((dish)=>{
+        return (
+            <div className="menu-Container">
+                <h3>{dish.name}</h3>
             </div>
-        </div>
-    </div> 
-);
-}
-
+        );
+    });
+  return (
+      <div className="main-content">
+          <div className= "container">
+              {menu}
+          </div>
+      </div>
+  );
+  
+    
+  };
 export default Breakfast;
