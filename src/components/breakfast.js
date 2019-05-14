@@ -9,6 +9,7 @@ const Breakfast = (props) => {
         return (
             <div className="menu-Container">
                 <h3>{dish.name}</h3>
+                <h3>{dish.price}</h3>
             </div>
         );
     });
