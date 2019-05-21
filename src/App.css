@@ -16,14 +16,14 @@ body {
 .home-image {
   width: 100%;
   height: 50px;
-  background-image: url();
+  /* background-image: url(); */
   background-size: cover;
   margin-bottom: 50px;
   transition: all 0.3s ease-in-out;
 }
 
 .home-image:hover {
-  background-image: url();
+  /* background-image: url(); */
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
