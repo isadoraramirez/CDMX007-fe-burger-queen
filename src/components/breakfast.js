@@ -18,7 +18,7 @@ export default class List extends React.Component {
   render() {
     return (
       <ul>
-       { this.state.items.map(obj => <li> <button>{obj.name}</button></li>)}
+       { this.state.items.map(obj => <li> <button>{obj.name} $ {obj.price}</button></li>)}
       </ul>
     )
   }
