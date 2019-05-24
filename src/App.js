@@ -4,10 +4,11 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import { AppContextProvider,
      AppContext } from "./appContext";
-import Navbar from './components/navbar';
+ import Navbar from './components/navbar';
 import Menu from "./components/menu";
 import Ticket from "./components/ticket";
-
+import Item from "./components/item"
+import Button from "./components/button";
 
 
 
@@ -21,10 +22,12 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Navbar />
-            <Route path="/breakfast" render={() => <Menu />} />
+            {/* <Route path="/breakfast" render={() => <Menu />} />
             <Route path="/burgers" render={() => <Menu />} />
-            <Route path="/drinks" render={() => <Menu />} />
-            <Route path="/complements" render={() => <Menu />} />
+            <Route path="/drinks" render={() => <Menu />} /> */}
+            {/* <Route path="/complements" render={() => <Menu />} /> */}
+            <Route path="/complements" render={() => <Item />} />
+            <Route path="/complements" render={() => <Button />} />
           </div>
         </BrowserRouter>
       </AppContextProvider>
