@@ -31,19 +31,7 @@ export class AppContextProvider extends React.Component {
     })
     );
   }
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     data : [
-  //       {
-  //         image : "hambuerger.png",
-  //         name  : "Hamburguesa",
-  //         portion : "500g",
-  //         price   : 40
-  //       }
-  //     ]
-  //   }
-  // }
+
 
   _remove(position){
     let { data } = this.state;
@@ -57,19 +45,20 @@ export class AppContextProvider extends React.Component {
 
   }
 
-  _add(){
+  _add(position){
     let { data } = this.state;
-    let newData = [data
-      // ...data,
-      // {
-      //   image : "papas.png",
-      //   name  : "Papas a la francesa",
-      //   portion : "140g",
-      //   price   : Math.floor(Math.random() * 20) 
-      // }
+
+    let newData = [
+      ...data.slice(0, position),
+      ...data.slice(position + 1),
     ]
+
     this.setState({ data : newData });
+
   }
+
+
+
 
   _getTotal(){
     return _.sumBy(this.state.data, function(o) { return o.price; });;
@@ -120,17 +109,24 @@ export class AppContextProvider extends React.Component {
     return (
       <div className="app">
         <h1>Burger Queen</h1>
-        <ul className="todo-list">
+        <ul className="menu-rest">
           {this.state.data.map(
             (item,index) =>
               <Item data={item} key={index} onRemove={ () => this._remove(index)} />
             )
           }
         </ul>
+
+
+       
+      
+
+
+
         <div className="footer">
           <Button
             onClick={this._add.bind(this)}
-            name="Añadir producto"
+            name="añadir"
           />
           <h4>$ {this._getTotal()}</h4>
         </div>

@@ -22,10 +22,12 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Navbar />
-            {/* <Route path="/breakfast" render={() => <Menu />} />
+           
             <Route path="/burgers" render={() => <Menu />} />
-            <Route path="/drinks" render={() => <Menu />} /> */}
-            {/* <Route path="/complements" render={() => <Menu />} /> */}
+            <Route path="/drinks" render={() => <Menu />} />
+            <Route path="/complements" render={() => <Menu />} />
+
+            
             <Route path="/complements" render={() => <Item />} />
             <Route path="/complements" render={() => <Button />} />
           </div>
