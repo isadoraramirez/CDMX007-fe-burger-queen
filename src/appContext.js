@@ -118,38 +118,29 @@ export class AppContextProvider extends React.Component {
         </ul>
 
 
-       
-      
+        {/* <ul className="menu-add">
+          {this.state.data.map(
+            (item,index) =>
+              <Item data={item} key={index} onAdd={ () => this._add(index)} />
+            )
+          }
+        </ul> */}
 
-
-
-        <div className="footer">
+        <div 
+        className="menu-add">
           <Button
             onClick={this._add.bind(this)}
             name="añadir"
           />
-          <h4>$ {this._getTotal()}</h4>
+
+
+
+          <h4>Total: $ {this._getTotal()}</h4>
         </div>
       </div>
     );
   }
 }
-//   render() {
-//     const { order } = this.state;
-     
-//     return (
-//       <AppContext.Provider
-//         value={{
-//           items: this.state.items,
-//           btnSelect: this.btnSelect,
-//           btnDelete: this.btnDelete,
-//           order
-//         }}
-//       >
-//         {this.props.children}
-//       </AppContext.Provider>
-//     );
-//   }
-// }
+
 
 export const AppContextConsumer = AppContext.Consumer;

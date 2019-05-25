@@ -13,7 +13,7 @@ class Item extends Component{
 				</div> */}
 				<div className="name">
 					<span className="item-name">{this.props.data.name}</span>
-					<span className="item-price">{this.props.data.portion}</span>
+					<span className="item-price">, porciónes: {this.props.data.portion}</span>
 				</div>
 				<div className="price">
 					<h3>${this.props.data.price}</h3>
