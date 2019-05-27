@@ -19,8 +19,11 @@ class Item extends Component{
 					<h3>${this.props.data.price}</h3>
 				</div>
 				<button className="remove" onClick={this._remove.bind(this)}>
-					<i className="material-icons">close</i>
+					<i className="material-icons">quitar
+
+					</i>
 				</button>
+				
 			</li>
 		)
 	}

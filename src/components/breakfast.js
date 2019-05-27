@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Item from './item';
+
 import Button from './button';
 import _ from 'lodash';
 
@@ -11,11 +12,9 @@ import _ from 'lodash';
     super(props);
     this.state = {
       data: []
-      // ,
-      // order: []
+   
     };
-    // this.btnSelect = this.btnSelect.bind(this);
-    // this.btnDelete = this.btnDelete.bind(this);
+    
   }
 
   componentDidMount() {
@@ -71,7 +70,7 @@ import _ from 'lodash';
   render() {
     return (
       <div className="app">
-        <h1>Burger Queen</h1>
+        <h1>Carta</h1>
         <ul className="menu-rest">
           {this.state.data.map(
             (item,index) =>
@@ -81,13 +80,9 @@ import _ from 'lodash';
         </ul>
 
 
-        {/* <ul className="menu-add">
-          {this.state.data.map(
-            (item,index) =>
-              <Item data={item} key={index} onAdd={ () => this._add(index)} />
-            )
-          }
-        </ul> */}
+
+
+
 
         <div 
         className="menu-add">
@@ -95,11 +90,14 @@ import _ from 'lodash';
             onClick={this._add.bind(this)}
             name="añadir"
           />
+          </div>
+       
+
+       <div>
 
 
 
-          <h4>Total: $ {this._getTotal()}</h4>
-        </div>
+      </div>
       </div>
     );
   }

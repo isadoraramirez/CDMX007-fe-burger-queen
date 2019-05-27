@@ -9,8 +9,9 @@ import Breakfast from './components/breakfast';
 import Meal from './components/meal';
 
 
-// import { AppContextProvider, AppContext } from "./appContext";
+import Ticket from './components/ticket';
 import Item from "./components/item"
+
 import Button from "./components/button";
 
 
@@ -25,9 +26,10 @@ class App extends Component {
                     <Route exact path="/" render={() => <Home title="Bienvenido" />} />
                     <Route path="/breakfast" render={() => <Breakfast title="Desayuno" />} />
                     <Route path="/meal" render={() => <Meal title="Comida" />} />
-                
+                      <Route path="/ticket" render={() => <Ticket title="ticket" />} />
                 
                     <Route path="/complements" render={() => <Item />} />
+                    
             <Route path="/complements" render={() => <Button />} />
                 
                 </div>
