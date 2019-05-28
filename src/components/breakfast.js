@@ -94,7 +94,7 @@ import _ from 'lodash';
 
        <div>
 
-
+       <h4>Total: $ {this._getTotal()}</h4>
 
       </div>
       </div>
