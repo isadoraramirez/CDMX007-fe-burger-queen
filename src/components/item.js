@@ -5,11 +5,24 @@ class Item extends Component{
 		if(this.props.onRemove)
 			this.props.onRemove();
 	}
+
+	 
+	add= ()=>{
+		if(this.props.onAdd)
+			this.props.onAdd();
+	}
+	 
+	
+
+
+
+
+
 	render(){
 		return (
 			<li>
 				<div className="icon">
-					{/* <img src={require(`../images/${this.props.data.image}`)}  alt="hambuerger" /> */}
+					
 				</div>
 				<div className="name">
 					<span className="item-name">{this.props.data.name}</span>
@@ -24,6 +37,14 @@ class Item extends Component{
 					</i>
 				</button>
 				
+
+				<button className="add" onClick={this.add}>
+					<i className="material-icons">añadir
+
+					</i>
+				</button>
+				
+
 			</li>
 		)
 	}

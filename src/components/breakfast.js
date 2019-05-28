@@ -74,7 +74,7 @@ import _ from 'lodash';
         <ul className="menu-rest">
           {this.state.data.map(
             (item,index) =>
-              <Item data={item} key={index} onRemove={ () => this._remove(index)} />
+              <Item data={item} key={index} onRemove={ () => this._remove(index)} onAdd={() => this._add(index)} />
             )
           }
         </ul>
@@ -90,8 +90,7 @@ import _ from 'lodash';
             onClick={this._add.bind(this)}
             name="añadir"
           />
-          </div>
-       
+          </div> 
 
        <div>
 
