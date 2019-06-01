@@ -1,39 +1,48 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+// import {BrowserRouter, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './App.css';
 
-import Navbar from './components/navbar';
-import Home from './components/home';
-import Breakfast from './components/breakfast';
-import Meal from './components/meal';
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+// import Navbar from './components/navbar';
+// import Home from './components/home';
+// import Breakfast from './components/breakfast';
 
 
-import Ticket from './components/ticket';
-import Item from "./components/item"
 
-import Button from "./components/button";
+
+// import Item from "./components/item"
+
+// import Button from "./components/button";
 
 
 class App extends Component {
     
     render() {
         return (
-            
-            <BrowserRouter>
-                <div className="App">
-                    <Navbar />
-                    <Route exact path="/" render={() => <Home title="Bienvenido" />} />
-                    <Route path="/breakfast" render={() => <Breakfast title="Desayuno" />} />
-                    <Route path="/meal" render={() => <Meal title="Comida" />} />
-                      <Route path="/ticket" render={() => <Ticket title="ticket" />} />
-                
-                    <Route path="/complements" render={() => <Item />} />
+          
+          <div>
+            <Layout>
+              <BurgerBuilder/>
+              </Layout> 
+          </div>
+
+
+
+
+            // <BrowserRouter>
+            //     <div className="App">
+            //         <Navbar />
+            //         <Route exact path="/" render={() => <Home title="Bienvenido" />} />
+            //         <Route path="/breakfast" render={() => <Breakfast title="Desayuno" />} />
+                   
+            //         <Route path="/complements" render={() => <Item />} />
                     
-            <Route path="/complements" render={() => <Button />} />
+            // <Route path="/complements" render={() => <Button />} />
                 
-                </div>
-            </BrowserRouter>
+            //     </div>
+            // </BrowserRouter>
         );
            
   }
